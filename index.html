@@ -268,21 +268,6 @@
             <img src="16ea592018af3e934b1d7f5427b9229.png" alt="右下角图片" style="max-width: 100%; height: auto; width: 200px;">
         </div>
         <script>
-                // 禁用右键菜单和快捷键
-            document.addEventListener('contextmenu', function(e) {
-                e.preventDefault();
-                alert('右键菜单已禁用');
-            });
-            
-            document.addEventListener('keydown', function(e) {
-                // 禁用F12, Ctrl+Shift+I, Ctrl+U等
-                if (e.key === 'F12' || 
-                    (e.ctrlKey && e.shiftKey && e.key === 'I') || 
-                    (e.ctrlKey && e.key === 'U')) {
-                    e.preventDefault();
-                    alert('此操作已被禁用');
-                }
-            });
             
             // 轮换气泡消息
             const messages = document.querySelectorAll('.bubble-message');
